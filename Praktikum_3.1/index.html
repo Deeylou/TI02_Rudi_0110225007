@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Black Goose Bistro | Pizza-on-Demand</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form action="http://blackgoosebistro.com/pizza.php" method="POST" class="form-box">
+    <h1>🍕 Black Goose Bistro</h1>
+    <p>Bangun pizza impianmu, kami antar dalam satu jam!</p>
+
+    <label>Nama</label>
+    <input type="text" name="customername" required placeholder="Nama lengkap">
+
+    <label>Alamat</label>
+    <input type="text" name="address" required placeholder="Alamat pengiriman">
+
+    <label>Telepon</label>
+    <input type="tel" name="telephone" required placeholder="08xxxxxxxxxx">
+
+    <label>Email</label>
+    <input type="email" name="email" required placeholder="nama@contoh.com">
+
+    <label>Instruksi Pengantaran</label>
+    <textarea name="instructions" maxlength="400" placeholder="Tidak lebih dari 400 karakter"></textarea>
+
+    <h2>🍞 Pilih Crust</h2>
+    <label><input type="radio" name="crust" value="Classic white" required> Classic white</label>
+    <label><input type="radio" name="crust" value="Multigrain"> Multigrain</label>
+    <label><input type="radio" name="crust" value="Cheese-stuffed crust"> Cheese-stuffed crust</label>
+    <label><input type="radio" name="crust" value="Gluten-free"> Gluten-free</label>
+
+    <h2>🧀 Topping</h2>
+    <label><input type="checkbox" name="toppings[]" value="Red sauce" checked> Red sauce</label>
+    <label><input type="checkbox" name="toppings[]" value="Mozzarella"> Mozzarella</label>
+    <label><input type="checkbox" name="toppings[]" value="Pepperoni"> Pepperoni</label>
+    <label><input type="checkbox" name="toppings[]" value="Mushrooms"> Mushrooms</label>
+
+    <label>Jumlah Pizza</label>
+    <select name="number">
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+
+    <div class="actions">
+      <button type="submit" class="btn">Bring me a pizza!</button>
+      <button type="reset" class="btn reset">Reset</button>
+    </div>
+  </form>
+</body>
+</html>
