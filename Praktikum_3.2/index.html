@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Barang Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>🛒 Order Barang Online</h1>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <section class="product-section">
+      <div class="preview-box">
+        <p>Pratinjau Gambar</p>
+      </div>
+      <label for="gambar" class="upload-label">Upload Gambar</label>
+      <input type="file" id="gambar" class="upload-input">
+    </section>
+
+    <section class="form-section">
+      <h2>Form Pemesanan Barang</h2>
+
+      <label>Nama Barang:</label>
+      <input type="text" placeholder="Contoh: Laptop Acer Aspire 5">
+
+      <label>Deskripsi:</label>
+      <textarea rows="3" placeholder="Tuliskan kondisi, model, dan tahun barang..."></textarea>
+
+      <label>Nomor Rekening:</label>
+      <input type="text" placeholder="123-456-7890">
+
+      <label>Bank:</label>
+      <select>
+        <option value="">Pilih Bank</option>
+        <option>BCA</option>
+        <option>BNI</option>
+        <option>BRI</option>
+        <option>Mandiri</option>
+      </select>
+
+      <label>Nama Pemilik Rekening:</label>
+      <input type="text" placeholder="Nama lengkap">
+
+      <label>Jumlah Transaksi:</label>
+      <input type="number" min="1" max="10" value="1">
+
+      <div class="checkbox">
+        <label><input type="checkbox" checked> Kirim ke WhatsApp</label>
+        <label><input type="checkbox"> Kirim ke Email</label>
+      </div>
+
+      <label>Nomor WhatsApp:</label>
+      <input type="text" placeholder="08123456789">
+
+      <label>Email:</label>
+      <input type="email" placeholder="email@contoh.com">
+
+      <button class="btn-submit">Buat Tautan Pembayaran</button>
+    </section>
+  </main>
+</body>
+</html>
